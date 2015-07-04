@@ -1,0 +1,121 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="aviation.admin_access.admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>JPA | Sistem Tempahan Tiket</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <!-- Master Container: Centered and 700px wide -->
+<div id="container">
+
+    <!-- The topmost bar -->
+    <div id="topbar">
+        Kami memudahkan urusan penempahan tiket anda</div>
+    <!-- End of top bar -->
+
+    <!-- This holds the main header -->
+    <div id="headerwrapper">
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/admin_access/images/banner sisket.jpg" Width="700px" />
+    
+	</div>
+	<!-- End of headerwrapper -->
+
+    <!-- This hold the navigation tabs -->
+    <div id="tabholder">
+        <div id="tabs8">
+            <ul>
+                <!-- CSS Tabs -->
+                <li><a href="homeadmin.aspx"><span>Menu</span></a></li>
+                <li><a href="link.aspx"><span>Penerbangan</span></a></li>
+                <li><a href="senaraipengarah.aspx"><span>Pengarah</span></a></li>
+                <li><a href="senaraipenyelia.aspx"><span>Penyelia</span></a></li>
+                <li><a href="profilpegawai.aspx"><span>Pegawai</span></a></li>
+                <li><a href="senaraitempahan.aspx"><span>Tempahan</span></a></li>
+                <li><a href="nilaiagen.aspx"><span>Agen</span></a></li>
+                <li><a href="statistik.aspx"><span>Laporan</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End of the tabs holder -->
+
+    <!-- This is the search box and login controls holder -->
+    <div class="articleboxouter">
+
+        <!-- Here's your stuff -->
+        
+
+            <!-- The search box and the button -->
+            &nbsp;
+
+            <!-- Lots of whitespace -->
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                        
+            &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+            <!-- Here's your login controls -->
+           
+       
+        <div class="userform">
+
+            <!-- The search box and the button -->
+            
+            <asp:LoginName ID="LoginName1" runat="server" 
+                FormatString="Selamat Datang Admin {0}" style="text-align: center" />
+<br />
+            <asp:LoginView ID="LoginView1" runat="server">
+                <LoggedInTemplate>
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Default.aspx" />
+                </LoggedInTemplate>
+            </asp:LoginView>
+
+            </div>
+           
+       
+    </div>
+&nbsp;<!-- Finally, here's the humble footer, holding your copyright --><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="footer">
+
+             Sistem Penempahan Tiket (C) Hakcipta 2012 JPA. 
+            
+
+    </div>
+    <!-- End of footer -->
+
+</div>
+<!-- End of master container -->
+
+
+
+    <div>
+    </div>
+    </form>
+</body>
+</html>
